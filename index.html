@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Small Box Attendance</title>
+</head>
+<body>
+    <H1>SEAT PLAN</h1>  
+    <div id="content"> </div>
+    <div class="teacher-container">
+        <div class="teacher-box teacher-box-unchecked" box-data-id="0" box-data-color="#ADD8E6"></div>
+    </div>
+
+    <div id="teacherInfo">
+        <p class="teacher-name"></p>
+    </div>
+
+    <button id="loginButton">Login</button>
+    <div class="form-container" id="loginContainer">
+      <form action="login.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+      </form>
+      <button id="loginCloseButton">Close</button>
+    </div>
+
+        <button id="registerButton">Register</button>
+    <div class="form-container" id="registerContainer">
+    <form action="register.php" method="post">
+        <label for="newUsername">Username:</label><br>
+        <input type=" id="newUsername" name="newUsername" required><br>
+        <label for="newPassword">Password:</label><br>
+        <input type="password" id="newPassword" name="newPassword" required><br>
+        <input type="submit" value="Register">
+    </form>
+    <button id="registerCloseButton">Close</button>
+    </div>
+
+        <div class="attendance-container">
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-01" data-box-color="#00FF00">1</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-03" data-box-color="#00FF00">3</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-05" data-box-color="#00FF00">5</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-07" data-box-color="#00FF00">7</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-09" data-box-color="#00FF00">9</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-11" data-box-color="#00FF00">11</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-13" data-box-color="#00FF00">13</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-15" data-box-color="#00FF00">15</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-17" data-box-color="#00FF00">17</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-19" data-box-color="#00FF00">19</div>
+            </div>
+            <div class="attendance-container">    
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-02" data-box-color="#00FF00">2</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-04" data-box-color="#00FF00">4</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-06" data-box-color="#00FF00">6</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-08" data-box-color="#00FF00">8</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-10" data-box-color="#00FF00">10</div> 
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-12" data-box-color="#00FF00">12</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-14" data-box-color="#00FF00">14</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-16" data-box-color="#00FF00">16</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-18" data-box-color="#00FF00">18</div>
+                <div class="attendance-box attendance-box-unchecked"  data-box-id="box-20" data-box-color="#00FF00">20</div>
+            </div>
+        </div>
+        <br>
+        <div class="attendance-container">
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-21" data-box-color="#00FF00">21</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-23" data-box-color="#00FF00">23</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-25" data-box-color="#00FF00">25</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-27" data-box-color="#00FF00">27</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-29" data-box-color="#00FF00">29</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-31" data-box-color="#00FF00">31</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-33" data-box-color="#00FF00">33</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-35" data-box-color="#00FF00">35</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-37" data-box-color="#00FF00">37</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-39" data-box-color="#00FF00">39</div>
+        </div>
+        <div class="attendance-container">
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-22" data-box-color="#00FF00">22</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-24" data-box-color="#00FF00">24</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-26" data-box-color="#00FF00">26</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-28" data-box-color="#00FF00">28</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-30" data-box-color="#00FF00">30</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-32" data-box-color="#00FF00">32</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-34" data-box-color="#00FF00">34</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-36" data-box-color="#00FF00">36</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-38" data-box-color="#00FF00">38</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-40" data-box-color="#00FF00">40</div>
+        </div>  
+        <br>
+        <div class="attendance-container">
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-41" data-box-color="#00FF00">41</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-43" data-box-color="#00FF00">43</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-45" data-box-color="#00FF00">45</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-47" data-box-color="#00FF00">47</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-49" data-box-color="#00FF00">49</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-51" data-box-color="#00FF00">51</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-53" data-box-color="#00FF00">53</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-55" data-box-color="#00FF00">55</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-57" data-box-color="#00FF00">57</div>
+            <div class="attendance-box attendance-box-unchecked"  data-box-id="box-59" data-box-color="#00FF00">59</div>
+        </div>
+        <div class="attendance-container">
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-42" data-box-color="#00FF00">42</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-44" data-box-color="#00FF00">44</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-46" data-box-color="#00FF00">46</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-48" data-box-color="#00FF00">48</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-50" data-box-color="#00FF00">50</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-52" data-box-color="#00FF00">52</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-54" data-box-color="#00FF00">54</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-56" data-box-color="#00FF00">56</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-58" data-box-color="#00FF00">58</div>
+            <div class="attendance-box attendance-box-unchecked" data-box-id="box-60" data-box-color="#00FF00">60</div>
+        </div>  
+
+    <div id="preview-box" class="hidden">
+        <p id="preview-box-content"></p>
+    </div>
+
+    <div id="infoForm">
+        <h2>Info Form</h2>
+        <form>
+            <div class="close-button" aria-label="Close" onclick="hideInfoForm()"></div>
+            <label for="studid">Student ID:</label>
+            <input type="text" id="studid" studid="studid" required><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="section">Section:</label>
+            <select id="section" name="section" required>
+            <option value="0">None</option>
+            <option value="LFAU222N001">LFAU222N001</option>
+            <option value="LFAU222N002">LFAU222N002</option>
+            <option value="LFAU222N003">LFAU222N003</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Submit</button>    
+        </form>
+    </div>
+    <p id="currentDateTime"></p>
+    <div id="submission-count" class="submission-count-container">0/60 submissions</div>
+
+    <button id="openPopupButton">Attendance</button>
+    <div id="popupContainer" class="popup-container">
+        <div class="popup">
+        <h1>ATTENDANCE LOG</h1>
+        <div id="teacherInfo2">
+            <p class="teacher-name"></p>
+        </div>    
+            <div id="list-box-container" style="display: flex; align-items: center;">
+                <button id="sort-button" onclick="sortTable()">Sort</button>
+                <select id="sort-select">
+                <option value="">none</option>
+                <option value="0">Seat</option>
+                <option value="1">Name</option>
+                <option value="2">Date</option>
+                <!-- Add more options for additional columns -->
+            </select>
+            </div>
+            <button id="downloadExcelButton">Download as Excel</button>
+            <div class="scrollable-table">
+                <table id="attendanceTable" border="1" style="min-width: 80%; background-color: whitesmoke;">
+                    <thead>
+                    <tr>
+                        <th>Seat</th>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Section</th>
+                        <th>Date</th>
+                    </tr>
+                    <br>
+                    </thead>
+                    <tbody id="myTableBody"></tbody>
+                </table>
+            </div>  
+            <button id="closePopupButton">Close</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/xlsx@0.16.8/dist/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+<script>
+    
+const openPopupButton = document.getElementById('openPopupButton');
+    const closePopupButton = document.getElementById('closePopupButton');
+    const popupContainer = document.getElementById('popupContainer');
+    
+    openPopupButton.addEventListener('click', () => {
+    popupContainer.style.display = 'flex';
+});
+    
+    closePopupButton.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+});
+
+function downloadExcel() {
+    const table = document.getElementById("attendanceTable");
+    const jsonData = tableToJson(table);
+
+    const worksheet = XLSX.utils.aoa_to_sheet([jsonData.header, ...jsonData.rows]);
+
+    worksheet["!cols"] = [{ width: 15 }, { width: 15 }, { width: 15 }, { width: 15 }, { width: 15 }];
+
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+    XLSX.writeFile(workbook, "Attendance.xlsx");
+
+    resetTableContent(table);
+    reloadPage();
+}
+
+function resetTableContent(table) {
+    table.querySelector("tbody").innerHTML = "";
+    table.querySelector("thead").innerHTML = `
+    <tr id="table-header">
+        <th>Seat</th>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Section</th>
+        <th>Date</th>
+    </tr>
+    `;
+}
+
+function tableToJson(table) {
+    const header = [];
+    const rows = [];
+
+    const theadHeaders = table.querySelectorAll("thead th");
+    theadHeaders.forEach((headerCell) => header.push(headerCell.innerText));
+
+    const rowsElements = table.querySelectorAll("tbody tr");
+    rowsElements.forEach((row) => {
+        const rowData = [];
+        row.querySelectorAll("td").forEach((cell) => rowData.push(cell.innerText));
+        rows.push(rowData);
+    });
+
+    return { header, rows };
+}
+
+function reloadPage() {
+    setTimeout(() => {
+        window.location.reload();
+    }, 100);
+}
+
+const downloadButton = document.getElementById("downloadExcelButton");
+downloadButton.addEventListener("click", downloadExcel);
+
+$(document).ready(function() {
+  $("#registerButton").click(function() {
+    $("#registerContainer").show();
+  });
+  $("#registerCloseButton").click(function() {
+    $("#registerContainer").hide();
+  });
+  $("#loginButton").click(function() {
+    $("#loginContainer").show();
+  });
+  $("#loginCloseButton").click(function() {
+    $("#loginContainer").hide();
+  });
+});
+</script>
+</html>
